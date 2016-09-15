@@ -14,7 +14,13 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <style>
-body{background-color:lightblue;}
+body {
+    background-image: url("http://1.bp.blogspot.com/-QzuVPOZ8sEo/VIl0UtzXexI/AAAAAAAAFH0/xzxpMUnLGmg/s1600/Christmas-Wish-List.png");
+background-size: cover;
+    background-repeat: no-repeat;
+
+
+
 </style>
 <div>
 <nav class="navbar navbar-inverse">
@@ -76,18 +82,14 @@ body{background-color:lightblue;}
         <li><a href="home">HOME</a><span class="glyphicon glyphicon-home"></span> Home</a></li>
       </ul>
       </div>
-    </div>
-  </div>
- </ul>
-</div>
-</head>
+    </div></head>
 <center><body>
-  <form:form action="registerUser" commandName="u">
- User Name:<form:input path="userName"/>
- Email:<form:input path="emailId"/>
- Password:<form:password path="password"/>
- <input type="submit" value="submit"/>
-  </form:form>
+  <center><form:form action="registerUser" commandName="u">
+   User Name:<form:input path="userName"/><br></br>
+   Email:<form:input path="emailId"/><br></br>
+   Password:<form:password path="password"/><br></br>
+   <input type="submit" value="submit"/>
+   </form:form></center>
  
 </div>
 

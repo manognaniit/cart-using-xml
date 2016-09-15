@@ -22,11 +22,14 @@ public class HomeController {
 	
 		System.out.println("in signup method");
 		User u=new User();
+		//u is the empty object
+		//"u" identity of object u
 		return new ModelAndView("register","u",u);
 	}
 	@RequestMapping("/registerUser")
 	public String registerUser(@ModelAttribute("u")User user){
 		System.out.println("in signup method");
+		//user is domain object.
 		userDAO.registerUser(user);
 		
 		return "registerUser";

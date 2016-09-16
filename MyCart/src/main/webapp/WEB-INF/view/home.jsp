@@ -22,8 +22,8 @@ background-size: cover;
 </style>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-<nav class="navbar navbar-dark bg-primary">
+<nav class="navbar navbar-fixed-top">
+<nav class="navbar navbar-dark ">
 <div class="container-fluid">
 <div class="navbar-header">
 <a class="navbar-brand" href="#">MY CART</a>
@@ -38,6 +38,7 @@ background-size: cover;
           <li><a href="#">Basic models</a></li>
         <li><a href="#">Mobile phone covers</a></li>
 <li><a href="#">Screen Protectors</a></li>
+</li>
         </ul>
  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">ELECTRONICS<span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -46,6 +47,7 @@ background-size: cover;
           <li><a href="#">Air-Conditioners</a></li>
              <li><a href="#">Microwave</a></li>
           <li><a href="#">Mixers&Grinders</a></li>
+          </li>
         </ul>
          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">EYE WEAR<span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -66,7 +68,7 @@ background-size: cover;
         <ul class="dropdown-menu">
           <li><a href="#">Cutlery</a></li>
           <li><a href="#">Nonstick</a></li>
-         
+         </li>
         </ul>
  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">FOOTWARE<span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -75,6 +77,7 @@ background-size: cover;
           <li><a href="#">Flipflops</a></li>
            <li><a href="#">Sandals</a></li>
          <li><a href="#">Sports</a></li>
+         </li>
         </ul>
 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Gifts<span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -83,6 +86,10 @@ background-size: cover;
           <li><a href="#">GreetingCards</a></li>
            <li><a href="#">Boquets</a></li>   
         </ul>
+        </li>
+        </ul>
+       
+<ul class="nav navbar-nav navbar-right">
         <li><a href="register">register</a><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="login">LOG-IN</a><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
          <li><a href="#">Add To Cart</a><span class="glyphicon glyphicon-log-in"></span> Add To Cart</a></li>
@@ -92,7 +99,6 @@ background-size: cover;
 <div class="container">
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:800px;height:1600px; margin: 0 auto">
-  
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -106,15 +112,12 @@ background-size: cover;
       <div class="item active">
         <img src="http://www.pngall.com/wp-content/uploads/2016/04/Shopping-Free-PNG-Image.png" alt="Shopping" width="1600" height="1600">
       </div>
-
       <div class="item">
         <img src="http://www.hercampus.com/sites/default/files/styles/full_width_embed/public/2013/03/16/love%20shopping.png?itok=2y1Cqkf6" alt="phpcluryo" width="1600" height="1600">
       </div>
-    
       <div class="item">
         <img src="http://1.bp.blogspot.com/-QzuVPOZ8sEo/VIl0UtzXexI/AAAAAAAAFH0/xzxpMUnLGmg/s1600/Christmas-Wish-List.png" alt="launchpad" width="1600" height="1600">
       </div>
-
       <div class="item">
         <img src="http://ipodlounge.net/wp-content/uploads/2015/12/Modern-Gadgets-and-Their-Benefits.jpg" alt="images" width="1600" height="1600">
       </div>
@@ -132,15 +135,10 @@ background-size: cover;
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
-<div class="container">
-</div>
-
-<div>
-<footer>
-  <p>All Rights Reserved.</p>
-  </footer>
-</div>
+  <center><div>
+<h4>2016 all copy rights are reserved<h4>
+</div></center>
+  
 
 </body>
 </html>

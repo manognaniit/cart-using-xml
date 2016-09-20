@@ -7,8 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="addProduct">Add Product</a>
-<a href="ViewProducts">View Product</a>
-<a href="logout"> logout</a>
+<% 
+session.invalidate();
+%>
+you are logged out
 </body>
 </html>

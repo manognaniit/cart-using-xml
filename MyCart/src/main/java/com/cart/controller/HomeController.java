@@ -1,7 +1,10 @@
 package com.cart.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -17,6 +20,12 @@ public class HomeController {
 		System.out.println("in home method");
 		return "home";
 	}
+	@RequestMapping("/login")
+	public String login(){
+		System.out.println("in login method");
+		return "login";
+	}
+	
 	@RequestMapping("/register")
 	public ModelAndView register(){
 	
@@ -27,12 +36,22 @@ public class HomeController {
 		return new ModelAndView("register","u",u);
 	}
 	@RequestMapping("/registerUser")
-	public String registerUser(@ModelAttribute("u")User user){
+	public ModelAndView registerUser(@Valid @ModelAttribute("u")User user,BindingResult bindingResult){
+		if (bindingResult.hasErrors()){
+			return new ModelAndView("register") ;
+		}
+		
+		
+		
 		System.out.println("in signup method");
 		//user is domain object.
 		userDAO.registerUser(user);
 		
-		return "registerUser";
+		return  new ModelAndView("registerUser","info","successfuly registered");
 	}
-
+	@RequestMapping("/logout")
+	public String logout(){
+		System.out.println("in login method");
+		return "logout";
+	}
 }
